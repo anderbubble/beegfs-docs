@@ -88,11 +88,5 @@ of the system.
 
 .. toctree::
    :maxdepth: 2
-   :caption: General Architecture
 
    architecture
-   architecture/management
-   architecture/metadata
-   architecture/storage
-   architecture/client
-   architecture/admon
