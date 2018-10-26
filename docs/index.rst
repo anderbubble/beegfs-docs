@@ -1,4 +1,6 @@
-.. from https://www.beegfs.io/docs/whitepapers/Introduction_to_BeeGFS_by_ThinkParQ.pdf
+===============================
+BeeGFS Unofficial Documentation
+===============================
 
 BeeGFS is the leading parallel cluster file system. It has been
 developed with a strong focus on maximum performance and scalability,

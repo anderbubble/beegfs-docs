@@ -1,11 +1,17 @@
-.. title: General Architecture
+====================
+General Architecture
+====================
 
 The BeeGFS architecture is composed of four main services:
 
-- Management service: A registry and watchdog for all other services
-- Storage service: Stores the distributed user file contents
-- Metadata service: Stores access permissions and striping information
-- Client service: Mounts the file system to access the stored data
+Management service
+  A registry and watchdog for all other services
+Storage service
+  Stores the distributed user file contents
+Metadata service
+  Stores access permissions and striping information
+Client service
+  Mounts the file system to access the stored data
 
 In addition to the main services list above, BeeGFS also comes with an
 optional graphical administration and monitoring service (the
