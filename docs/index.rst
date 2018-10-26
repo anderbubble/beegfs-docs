@@ -87,6 +87,6 @@ always add systems of a new platform later throughout the life cycle
 of the system.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    architecture
