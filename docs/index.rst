@@ -88,6 +88,7 @@ of the system.
 
 .. toctree::
    :maxdepth: 2
+   :caption: Architecture
 
    architecture
    mirroring
@@ -95,8 +96,6 @@ of the system.
    cloud
    striping
    client-tuning
-   contact
-   license
 
 
 .. toctree::
@@ -105,3 +104,11 @@ of the system.
 
    getting-started
    beeond
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Support
+
+   contact
+   license
