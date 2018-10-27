@@ -18,7 +18,6 @@ C
 CacheAPI [Cache API] . . . . Owner: WikiAdmin
 Caching [Caching] . . . . Owner: WikiAdmin
 Categories [Categories] . . . . Owner: WikiAdmin
-ClientTuning [Client Tuning] . . . . Owner: WikiAdmin
 
 D
 DownloadAdmon [Download and Installation of the Admon service] . . . . Owner: WikiAdmin

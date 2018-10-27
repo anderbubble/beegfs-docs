@@ -96,5 +96,6 @@ of the system.
    cloud
    getting-started
    striping
+   client-tuning
    contact
    license
