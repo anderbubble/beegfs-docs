@@ -72,7 +72,7 @@ accessible.
 
 .. figure: storage-service-mirror.png
 
-   Figure 6: Storage Service Buddy Mirror Groups
+   Storage Service Buddy Mirror Groups
 
 Storage buddy mirroring can also be used with an odd number of storage
 servers. This works, because BeeGFS buddy groups are composed of
@@ -83,7 +83,7 @@ even be composed of two targets that are attached to the same server.)
 
 .. figure: storage-service-mirror-odd.png
 
-   Figure 7: Storage Mirroring with odd Number of Servers
+   Storage Mirroring with odd Number of Servers
 
 In normal operation, one of the storage targets (or metadata servers)
 in a buddy group is labeled as primary, whereas the other is labeled

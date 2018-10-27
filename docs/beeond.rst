@@ -23,7 +23,7 @@ file system.
 
 .. figure: beeond.png
 
-   Figure 9: BeeOND: BeeGFS on demand
+   BeeOND: BeeGFS on demand
 
 BeeOND is based on the normal BeeGFS services, meaning your compute
 nodes will also run the BeeGFS storage and metadata services to

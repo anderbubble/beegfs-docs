@@ -19,7 +19,7 @@ so-called “admon”).
 
 .. figure:: architecture.jpeg
 
-   Figure 1: BeeGFS Architecture Overview
+   BeeGFS Architecture Overview
 
 All BeeGFS services write a log file with the corresponding service
 name to /var/log/beegfs-*.log
@@ -57,7 +57,7 @@ The Management Service
 
 .. figure:: management-service.png
 
-   Figure 2: Management Service
+   Management Service
 
 The management service can be figured as a “meeting point” for the
 BeeGFS metadata, storage, and client services. It is very light-weight
@@ -75,7 +75,7 @@ The Metadata Service
 
 .. figure:: metadata-service.png
 
-   Figure 3: Metadata Service
+   Metadata Service
 
 The metadata service stores information about the data e.g. directory
 information, file and directory ownership and the location of user
@@ -113,7 +113,7 @@ The Storage Service
 
 .. figure:: storage-service.png
 
-   Figure 4: Storage Service
+   Storage Service
 
 The storage service (sometimes also referred to as the “object storage
 service”) is the main service to store striped user file contents,
@@ -228,7 +228,7 @@ Admon: Administration and Monitoring System
 
 .. figure:: admon.png
 
-   Figure 5: Admon GUI - Client Operation Statistics
+   Admon GUI - Client Operation Statistics
 
 In addition to the beegfs-ctl command line tool, the optional BeeGFS
 Administration and Monitoring system (short: admon) provides a

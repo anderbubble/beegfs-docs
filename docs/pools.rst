@@ -40,7 +40,7 @@ implement a time-limited reservation mechanism for the flash pool.
 
 .. figure: storage-pools.png
 
-   Figure 8: Storage Pools
+   Storage Pools
 
 However, while the concept of storage pools was originally developed
 to take optimum advantage of flash drives in a system with high
