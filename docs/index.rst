@@ -96,5 +96,4 @@ of the system.
    cloud
    getting-started
    contact
-
-
+   license
