@@ -267,6 +267,78 @@ To check target states of storage targets, use::
   $ beegfs-ctl --listtargets --nodetype=storage --state
 
 
+Activating Metadata Mirroring
+-----------------------------
+
+After metadata server buddy groups have been defined as described
+under Management of Mirror Buddy Groups, metadata mirroring can be
+activated on the file system.
+
+.. note:: When applying the beegfs-ctl --mirrormd command, no clients
+          may be mounted. This can be achieved by stopping the
+          beegfs-client service beforehand, and starting it again
+          after beegfs-ctl --mirrormd was successfully performed. In
+          addition, please restart the beegfs-meta service on all
+          nodes afterwards.
+
+To active metadata mirroring, use the beegfs-ctl tool::
+
+  $ beegfs-ctl --mirrormd
+
+In order to synchronize all information across the various components
+of BeeGFS correctly, the clients can not be mounted during this
+process, and the metadata servers must be restarted afterwards.
+
+The full series of steps in an already running system is: stop all
+clients, execute beegfs-ctl --mirrormd, restart all metadata servers,
+then restart all clients.
+
+Please see the help of beegfs-ctl for more information on available
+parameters::
+
+  $ beegfs-ctl --mirrormd --help
+
+Running this command will enable metadata mirroring for the root
+directory of the BeeGFS, as well as all the files contained in
+it. Note that existing directories except for the root directory will
+not be mirrored automatically. Please check `Migrating Existing
+Metadata`_ to find out how to mirror existing directories.
+
+New files and directories created inside a directory with active
+metadata mirroring will also have metadata mirroring activated. There
+might be situations where it is desirable to deactivate metadata
+mirroring for part of the file systems. This gives a slight
+performance boost, but the data will not be preserved in the event of
+a server failure. A directory without metadata mirroring can be
+created using beegfs-ctl::
+
+  $ beegfs-ctl --createdir --nomirror <name>
+
+For information about additional command line parameters, please see
+the beegfs-ctl help::
+
+  $ beegfs-ctl --createdir --help
+
+Directories and files created inside a directory without metadata
+mirroring will have metadata mirroring disabled.
+
+
+Migrating Existing Metadata
+---------------------------
+
+If a file is moved into a directory with active metadata mirroring, it
+will have its metadata mirrored. On the other hand, directories will
+not automatically be mirrored when moved. For a directory to be
+mirrored, it is therefore necessary to freshly create a directory
+inside a mirrored directory. The easiest way to enable mirroring for a
+whole directory tree is to do a recursive copy::
+
+  $ cp -a <directory> <mirrored-dir>
+
+This will also copy the file contents, therefore it is possible to use
+it for enabling metadata and storage mirroring at the same time.
+
+
 Restoring Metadata and Storage Target Data after Failures
 =========================================================
 

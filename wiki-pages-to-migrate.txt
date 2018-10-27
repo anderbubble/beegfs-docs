@@ -52,7 +52,6 @@ ManualInstallAdditionalNotes [Miscellaneous Configuration Advices] . . . . Owner
 ManualInstallation [Manual Installation] . . . . Owner: WikiAdmin
 ManualInstallWalkThrough [Install Commands Walk-Through (Quickstart Guide)] . . . . Owner: WikiAdmin
 ManualInstallWalkThrough V70 [Install Commands Walk-Through (Quickstart Guide)] . . . . Owner: roesch
-MDMirror [Metadata Buddy Mirroring] . . . . Owner: WikiAdmin
 MetaServerTuning [Tips and Recommendations for Metadata Server Tuning] . . . . Owner: WikiAdmin
 Miscellaneous [Miscellaneous] . . . . Owner: WikiAdmin
 Mon [BeeGFS Monitoring Service] . . . . Owner: rehp
