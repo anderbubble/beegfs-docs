@@ -1,6 +1,5 @@
 A
 AdmonGuide [Admon Guide] . . . . Owner: WikiAdmin
-AdmonLicensing [Admon Licensing] . . . . Owner: WikiAdmin
 AdmonLogin [Admon Login] . . . . Owner: WikiAdmin
 AdmonMenu [Admon Main Menu] . . . . Owner: WikiAdmin
 AdmonStart [Admon GUI Start] . . . . Owner: WikiAdmin
