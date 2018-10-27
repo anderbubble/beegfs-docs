@@ -79,8 +79,6 @@ StartingSetup [Starting Setup] . . . . Owner: WikiAdmin
 StartStopBeeGFSServices [Start / Stop BeeGFS Services] . . . . Owner: WikiAdmin
 StoragePools [Storage Pools] . . . . Owner: WikiAdmin
 StorageServerTuning [Tips and Recommendations for Storage Server Tuning] . . . . Owner: WikiAdmin
-StorageSynchronization [Resynchronization of Storage Targets and Metadata Servers] . . . . Owner: WikiAdmin
-StorageSynchronization2015 [Synchronization of Storage Targets in 2015.03 Releases] . . . . Owner: WikiAdmin
 StorageSynchronizationConstruction [Resynchronization of Storage Targets and Metadata Servers] . . . . Owner: WikiAdmin
 StripingAPI [Striping API] . . . . Owner: WikiAdmin
 Support [Support] . . . . Owner: WikiAdmin
