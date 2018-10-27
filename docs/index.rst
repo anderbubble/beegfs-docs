@@ -92,10 +92,16 @@ of the system.
    architecture
    mirroring
    pools
-   beeond
    cloud
-   getting-started
    striping
    client-tuning
    contact
    license
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Deployment
+
+   getting-started
+   beeond

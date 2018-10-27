@@ -350,6 +350,94 @@ cases it might be necessary that you manually start a synchronization
 process.
 
 
+Automatic Resynchronization
+---------------------------
+
+In general, if a secondary target or server is considered to be
+out-of-sync, it is automatically set to the consistency state needs
+resync (see "Target and Node States" for more information on states)
+by the the management daemon.
+
+The storage target resynchronization process for self-healing is
+coordinated by the primary target. The standard process tries to avoid
+unnecessary transfer of files. Therefore the primary target saves the
+time of the last successful communication with the secondary
+target. Only files which where modified after this timestamp will be
+resynchronized by default. To avoid losing cached data, a short safety
+threshold timespan will be added (defined by
+sysResyncSafetyThresholdMins in beegfs-storage.conf).
+
+Since metadata are much smaller than storage contents, there is no
+timestamp-based mechanism in place, and instead the full mirrored
+metadata of the metadata server will be sent to its buddy during the
+resynchronization process.
+
+
+Manual Resynchronization
+------------------------
+
+In some cases it might be useful or even neccessary to manually
+trigger resynchronization of a storage target or metadata server. One
+case, for example, is a storage system on the secondary target that is
+damaged beyond repair. In this scenario all data of that target might
+be lost and a new target needs to be brought up with the old
+target ID. The automatic resync won't be sufficient then, because it
+would only consider files after the last successful communication of
+the targets. Another case for a manual resync override is when a fsck
+of the underlying local file system (e.g. xfs_repair) has removed old
+files.
+
+The beegfs-ctl tool can be used to manually set a storage target or
+metadata server to the needs resync state. Please note that this does
+not trigger a resync immediately, but does only inform the management
+daemon about the new state. The resync process then will be started by
+the primary of that buddy group a few moments later.
+
+As said before, the primary target saves the time of the last
+successful communication with the secondary target. Without additional
+parameters, this timestamp will be used to shorten resynchronization
+times as much as possible. But it is also possible to override this
+timestamp to resynchronize a longer timespan or to resynchronize
+everything in the case described previously.
+
+Please see the help of beegfs-ctl for more information on available
+parameters::
+
+  $ beegfs-ctl --startresync --help
+
+If a resynchronization is already running and you want to abort it and
+start anew, you can do so by passing the --restart parameter to
+beegfs-ctl. If you don't, the current process keeps running and your
+request will be ignored. This is particularly useful if the system
+started an automatic resynchronization after a secondary target became
+reachable again, but you know that the timestamp-based approach is not
+sufficient. For example, this might be the case if your complete
+underlying filesystem broke before the secondary target was started,
+i.e. the target is completely empty and needs a full
+synchronization. Note that restarting a running resync is only
+possible for storage targets because metadata servers never do a
+partial resynchronization.
+
+The following command could be used to stop the automatic
+resynchronization and start a full resynchronization instead.
+
+::
+
+   $ beegfs-ctl --startresync --nodetype=storage --targetid=X --timestamp=0 --restart
+
+
+Display Resynchronization Information
+-------------------------------------
+
+The beegfs-ctl command line tool can be used to display information on
+an ongoing resynchronization process.
+
+Please see the built-in help of beegfs-ctl for more information on
+available parameters::
+
+  $ beegfs-ctl --resyncstats --help
+
+
 Caveats of Storage Mirroring
 ============================
 
