@@ -91,7 +91,6 @@ of the system.
    :caption: Architecture
 
    architecture
-   admon
    mirroring
    pools
    cloud
@@ -105,6 +104,14 @@ of the system.
 
    getting-started
    beeond
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Interface
+
+   admon
+   api
 
 
 .. toctree::
