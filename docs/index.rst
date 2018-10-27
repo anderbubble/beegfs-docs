@@ -90,7 +90,7 @@ of the system.
    :maxdepth: 2
 
    architecture
-   replication
+   mirroring
    pools
    beeond
    cloud
