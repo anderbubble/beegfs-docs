@@ -1,9 +1,6 @@
 A
-AdmonGuide [Admon Guide] . . . . Owner: WikiAdmin
 AdmonLogin [Admon Login] . . . . Owner: WikiAdmin
 AdmonMenu [Admon Main Menu] . . . . Owner: WikiAdmin
-AdmonStart [Admon GUI Start] . . . . Owner: WikiAdmin
-AdmonUsage [Admon Graphical User Interface (GUI) Usage] . . . . Owner: WikiAdmin
 APIsOverview [BeeGFS APIs Overview] . . . . Owner: WikiAdmin
 
 B

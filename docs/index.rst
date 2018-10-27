@@ -91,6 +91,7 @@ of the system.
    :caption: Architecture
 
    architecture
+   admon
    mirroring
    pools
    cloud
