@@ -90,3 +90,11 @@ of the system.
    :maxdepth: 2
 
    architecture
+   replication
+   pools
+   beeond
+   cloud
+   getting-started
+   contact
+
+
