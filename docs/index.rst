@@ -95,5 +95,6 @@ of the system.
    beeond
    cloud
    getting-started
+   striping
    contact
    license

@@ -84,7 +84,6 @@ StorageServerTuning [Tips and Recommendations for Storage Server Tuning] . . . .
 StorageSynchronization [Resynchronization of Storage Targets and Metadata Servers] . . . . Owner: WikiAdmin
 StorageSynchronization2015 [Synchronization of Storage Targets in 2015.03 Releases] . . . . Owner: WikiAdmin
 StorageSynchronizationConstruction [Resynchronization of Storage Targets and Metadata Servers] . . . . Owner: WikiAdmin
-Striping [Striping Settings] . . . . Owner: WikiAdmin
 StripingAPI [Striping API] . . . . Owner: WikiAdmin
 Support [Support] . . . . Owner: WikiAdmin
 SystemArchitecture [System Architecture] . . . . Owner: WikiAdmin

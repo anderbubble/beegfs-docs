@@ -211,7 +211,7 @@ Define Stripe Pattern
 =====================
 
 After defining storage buddy mirror groups in your system, you have to
-define a data stripe pattern that uses it.
+define a :doc:`data stripe <striping>` pattern that uses it.
 
 
 Enabling and disabling Mirroring
