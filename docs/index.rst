@@ -103,6 +103,7 @@ of the system.
    :caption: Deployment
 
    getting-started
+   install
    beeond
 
 

@@ -24,7 +24,6 @@ FilesystemModificationEvents [Filesystem Modification Events] . . . . Owner: ste
 FSCheck [BeeGFS File System Check (beegfs-fsck)] . . . . Owner: WikiAdmin
 
 G
-GUIbasedInstallation [GUI-based Installation and Service Management] . . . . Owner: WikiAdmin
 GUIConfigureBeeGFS [Configure BeeGFS Nodes and Services] . . . . Owner: WikiAdmin
 
 H
@@ -32,8 +31,6 @@ HadoopConnector [BeeGFS as the Hadoop File System] . . . . Owner: WikiAdmin
 
 I
 InstallationBasicSetup [Installation and basic Setup] . . . . Owner: WikiAdmin
-InstallationSetupGuide [Installation and Setup Guide] . . . . Owner: WikiAdmin
-InstallGuideImportantNotes [General Notes] . . . . Owner: WikiAdmin
 
 L
 Licensing [Licensing] . . . . Owner: WikiAdmin
